@@ -14,3 +14,23 @@ h2 {
 h3 {
   font-size: 25px;
 }
+nav a {
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background: gray;
+  color: #000000;
+}
+.nav a:hover{
+  background: #666666;
+}
+.nav li {
+  float:left;
+  width: 25%;
+  text-align: center;
+}
+.nav {
+  padding-top:2.5em;
+  padding-bottom: 3.5em;
+}
