@@ -34,3 +34,54 @@ h3 {
   padding-top: 2.5em;
   padding-bottom: 3.5em;
 }
+
+/* Homepage CSS Code Starts */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.index {
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.border {
+    padding: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.video_block { 
+	display: block; 
+	width: 50%; 
+	margin: 0 auto;  
+}  
+
+.site_link {
+	text-align: center;
+	padding: 10px;
+	margin-right: 150px;
+	text-justify: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  /* height: 300px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Homepage CSS Code Ends*/
