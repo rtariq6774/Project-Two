@@ -1,19 +1,24 @@
+/* Navigation Bar Code */
 html {
   line-height: 1.618em;
   font-family: Georgia, Lora, serif;
   font-size: 18px;
   padding: 30px;
 }
+
 h1 {
   font-size: 40px;
   text-align: center;
 }
+
 h2 {
   font-size: 35px;
 }
+
 h3 {
   font-size: 25px;
 }
+
 .nav a {
   font-size: 20px;
   padding: 10px;
@@ -22,14 +27,17 @@ h3 {
   background: gray;
   color: #000000;
 }
-.nav a:hover{
+
+.nav a:hover {
   background: #666666;
 }
+
 .nav li {
-  float:left;
+  float: left;
   width: 25%;
   text-align: center;
 }
+
 .nav {
   padding-top: 2.5em;
   padding-bottom: 3.5em;
@@ -38,9 +46,9 @@ h3 {
 /* Homepage CSS Code Starts */
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
+  margin-left: auto;
+  margin-right: auto;
+  display: block
 }
 
 .index {
@@ -49,27 +57,86 @@ h3 {
 }
 
 .border {
-    padding: 15px;
+  padding: 15px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.video_block { 
-	display: block; 
-	width: 50%; 
-	margin: 0 auto;  
-}  
+/* slideshow code */
 
-.site_link {
-	text-align: center;
-	padding: 10px;
-	margin-right: 150px;
-	text-justify: auto;
+.container {
+  margin: 50px auto;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+-webkit-@keyframes round {
+  25% {
+    opacity: 1;
+    -webkit-opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    -webkit-opacity: 0;
+  }
+}
+
+img:nth-child(1) {
+  animation-delay: 16s;
+  width: 500px;
+  height: 350px;
+}
+
+img:nth-child(2) {
+  animation-delay: 12s;
+  width: 500px;
+  height: 300px;
+}
+
+img:nth-child(3) {
+  animation-delay: 8s;
+  width: 450px;
+  height: 300px;
+}
+
+img:nth-child(4) {
+  animation-delay: 4s;
+  width: 500px;
+  height: 350px;
+}
+
+img:nth-child(5) {
+  animation-delay: 0s;
+  width: 500px;
+  height: 350px;
 }
 
 /* Create three equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 33%;
@@ -78,10 +145,26 @@ h3 {
 }
 
 /* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Video code */
+
+.video_block {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.site_link {
+  text-align: center;
+  padding: 10px;
+  margin-right: 150px;
+  text-justify: auto;
 }
 
 /*Homepage CSS Code Ends*/
