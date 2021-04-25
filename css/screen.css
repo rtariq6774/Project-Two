@@ -1,4 +1,5 @@
-/* Navigation Bar Code */
+/* Navigation Bar & basic Html code */
+
 html {
   line-height: 1.618em;
   font-family: Georgia, Lora, serif;
@@ -9,6 +10,7 @@ html {
 h1 {
   font-size: 40px;
   text-align: center;
+  line-height: 1.2em;
 }
 
 h2 {
@@ -33,14 +35,12 @@ h3 {
 }
 
 .nav li {
-  float: left;
-  width: 25%;
   text-align: center;
 }
 
 .nav {
   padding-top: 2.5em;
-  padding-bottom: 3.5em;
+  padding-bottom: 6em;
 }
 
 /* Homepage CSS Code Starts */
@@ -64,13 +64,14 @@ h3 {
   box-sizing: border-box;
 }
 
-/* slideshow code */
+/* Slideshow & Video border code */
 
 .container {
   margin: 50px auto;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 450px;
   overflow: hidden;
+  display: block;
   border: 10px solid;
   border-top-color: #856036;
   border-left-color: #5d4426;
@@ -79,6 +80,7 @@ h3 {
   position: relative;
 }
 
+/* Slideshow code */
 .photo {
   position: absolute;
   animation: round 16s infinite;
@@ -105,35 +107,35 @@ h3 {
   }
 }
 
-img:nth-child(1) {
+img.photo:nth-child(1) {
   animation-delay: 16s;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 450px;
 }
 
-img:nth-child(2) {
+img.photo:nth-child(2) {
   animation-delay: 12s;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 425px;
 }
 
-img:nth-child(3) {
+img.photo:nth-child(3) {
   animation-delay: 8s;
-  width: 450px;
-  height: 300px;
+  width: 550px;
+  height: 400px;
 }
 
-img:nth-child(4) {
+img.photo:nth-child(4) {
   animation-delay: 4s;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 450px;
 }
 
-img:nth-child(5) {
+img.photo:nth-child(5) {
   animation-delay: 0s;
-  width: 500px;
-  height: 350px;
-}
+  width: 600px;
+  height: 425px;
+}	
 
 /* Create three equal columns that floats next to each other */
 
@@ -141,7 +143,7 @@ img:nth-child(5) {
   float: left;
   width: 33%;
   padding: 10px;
-  /* height: 300px; */
+  height: 300px;
 }
 
 /* Clear floats after the columns */
@@ -150,21 +152,15 @@ img:nth-child(5) {
   content: "";
   display: table;
   clear: both;
+  text-align: center;
 }
 
-/* Video code */
-
-.video_block {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-}
+/* Site link code */
 
 .site_link {
   text-align: center;
-  padding: 10px;
   margin-right: 150px;
   text-justify: auto;
+  font-weight: bold;
 }
-
 /*Homepage CSS Code Ends*/
