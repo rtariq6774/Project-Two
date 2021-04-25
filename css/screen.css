@@ -96,17 +96,6 @@ h3 {
   }
 }
 
--webkit-@keyframes round {
-  25% {
-    opacity: 1;
-    -webkit-opacity: 1;
-  }
-  40% {
-    opacity: 0;
-    -webkit-opacity: 0;
-  }
-}
-
 img.photo:nth-child(1) {
   animation-delay: 16s;
   width: 600px;
