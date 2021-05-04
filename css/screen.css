@@ -40,7 +40,7 @@ h3 {
 
 .nav {
   padding-top: 2.5em;
-  padding-bottom: 6em;
+  padding-bottom: 2.5em;
 }
 
 /* Homepage CSS Code Starts */
@@ -80,8 +80,8 @@ h3 {
   position: relative;
 }
 
-/* Slideshow code */
-.photo {
+* Slideshow code */
+.slide {
   position: absolute;
   animation: round 16s infinite;
   opacity: 0;
@@ -95,44 +95,30 @@ h3 {
     opacity: 0;
   }
 }
-
-img.photo:nth-child(1) {
-  animation-delay: 16s;
-  width: 600px;
-  height: 450px;
-}
-
-img.photo:nth-child(2) {
-  animation-delay: 12s;
-  width: 600px;
-  height: 425px;
-}
-
-img.photo:nth-child(3) {
-  animation-delay: 8s;
-  width: 550px;
-  height: 400px;
-}
-
-img.photo:nth-child(4) {
-  animation-delay: 4s;
-  width: 600px;
-  height: 450px;
-}
-
-img.photo:nth-child(5) {
-  animation-delay: 0s;
-  width: 600px;
-  height: 425px;
-}	
-
 /* Create three equal columns that floats next to each other */
 
-.column {
+.column1 {
   float: left;
   width: 33%;
   padding: 10px;
-  height: 300px;
+  height: 310px;
+  background-color:#aaa
+}
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 310px;
+  background-color:#bbb
+}
+
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 310px;
+  background-color:#ccc
 }
 
 /* Clear floats after the columns */
@@ -152,4 +138,5 @@ img.photo:nth-child(5) {
   text-justify: auto;
   font-weight: bold;
 }
+
 /*Homepage CSS Code Ends*/
