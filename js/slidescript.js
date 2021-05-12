@@ -13,7 +13,8 @@ images[4] = "media/ecology.jpg";
 
 // Change Image
 function changeImg(){
-  document.slide.src = images[i];
+  document.getElementById("slide").src = images[i];
+  //document.slide.src = images[i];
 
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
