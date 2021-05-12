@@ -1,14 +1,24 @@
-/* Navigation Bar & basic Html code */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Playfair+Display&display=swap');
+
+
+/* Paletton Color Scheme Below */
+/* https://paletton.com/#uid=10y0u0k7Vu+1uRw4gFocmqnhqlS */
+
 
 html {
   line-height: 1.618em;
-  font-family: Georgia, Lora, serif;
+  font-family: Georgia, serif;
   font-size: 18px;
   padding: 30px;
+  /*max-width:1440px;*/
+  background-color: #F7D8BA;
 }
 
 h1 {
   font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #706254;
   text-align: center;
   line-height: 1.2em;
 }
@@ -21,35 +31,35 @@ h3 {
   font-size: 25px;
 }
 
+.nav a{
+  border-top: solid;
+  border-bottom: solid;
+}
+
 .nav a {
   font-size: 20px;
   padding: 10px;
   display: block;
   text-decoration: none;
-  background: gray;
+  background: #F7D8BA;
   color: #000000;
 }
 
 .nav a:hover {
-  background: #666666;
+  /*background: #666666;*/
+  border-top: solid #AB9084;
+  border-bottom: solid #AB9084;
+  color: #705F56;
 }
-
 .nav li {
   text-align: center;
 }
-
 .nav {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
 }
 
 /* Homepage CSS Code Starts */
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block
-}
 
 .index {
   text-align: left;
@@ -65,7 +75,6 @@ h3 {
 }
 
 /* Slideshow & Video border code */
-
 .container {
   margin: 50px auto;
   width: 600px;
@@ -80,11 +89,11 @@ h3 {
   position: relative;
 }
 
-* Slideshow code */
-.slide {
+/* Slideshow code */
+#slide {
   position: absolute;
-  animation: round 16s infinite;
-  opacity: 0;
+  /* animation: round 16s infinite; */
+  /* opacity: 0; */
 }
 
 @keyframes round {
@@ -95,14 +104,13 @@ h3 {
     opacity: 0;
   }
 }
-/* Create three equal columns that floats next to each other */
 
 .column1 {
   float: left;
   width: 33%;
   padding: 10px;
   height: 310px;
-  background-color:#aaa
+  background-color:#F9E4CF
 }
 
 .column2 {
@@ -110,7 +118,7 @@ h3 {
   width: 33%;
   padding: 10px;
   height: 310px;
-  background-color:#bbb
+  background-color:#FFEEDD
 }
 
 .column3 {
@@ -118,7 +126,7 @@ h3 {
   width: 33%;
   padding: 10px;
   height: 310px;
-  background-color:#ccc
+  background-color:#FFF9F3
 }
 
 /* Clear floats after the columns */
@@ -138,5 +146,4 @@ h3 {
   text-justify: auto;
   font-weight: bold;
 }
-
 /*Homepage CSS Code Ends*/
