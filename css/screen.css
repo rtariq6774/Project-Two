@@ -1,3 +1,4 @@
+/* Navigation Bar & basic Html code */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Playfair+Display&display=swap');
 
@@ -57,6 +58,63 @@ h3 {
 .nav {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
+}
+
+/*ABOUT PAGE CODE STARTS*/
+.description {
+  text-align: center;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.rowflex {
+  display: flex;
+  justify-content: center;
+}
+
+figure.philosophy,
+figure.diversity,
+figure.justice {
+  text-align: center;
+  padding: 20px;
+}
+.members {
+  text-align: center;
+}
+
+.objectives {
+  text-align:center;
+}
+
+.founders {
+  padding-top: 2em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  font-size: 30px;
+}
+
+.list {
+  list-style-type: circle;
+}
+
+figcaption,
+.description {
+  padding-bottom: 20px;
+}
+
+.button {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.4em;
+  width: 7.2em;
+  border: none;
+  background-color: #D2A981;
+  color: #000000;
+}
+.center {
+  display: flex;
+  padding-bottom: 35px;
 }
 
 /* Homepage CSS Code Starts */
@@ -147,3 +205,279 @@ h3 {
   font-weight: bold;
 }
 /*Homepage CSS Code Ends*/
+
+/* CONTACT PAGE CODE */
+form {
+  margin-top:2em;
+  text-align:center;
+}
+
+#contactHeader{
+  margin-top: 0px;
+  text-align:center;
+}
+
+#inputArea {
+  background:url("../media/plato-2.jpg");
+  background-position: 50% 0;
+  background-repeat:no-repeat;
+  text-align: center;
+  min-height: 467px;
+  max-height: 467px;
+}
+
+#formh3 {
+  color: white;
+  padding-top: 1em;
+}
+
+#formp {
+  color: lightgrey;
+  padding: 0 5px;
+}
+
+#inputArea ul {
+  height: 81%;
+  padding: 0 0 68px 0;
+}
+
+#inputArea li{
+  padding: 5px;
+  height:25%;
+}
+
+#inputArea li input{
+  border: none;
+  background: rgb(255, 255, 255, 0.8);
+  border-radius: 2px;
+  padding-left: 3px;
+  padding:5px;
+  /*width:300px;*/
+  width: 95%;
+  height:40px;
+}
+
+textarea{
+  border: none;
+  background: rgb(255, 255, 255, 0.8);
+  border-radius: 2px;
+  padding-left: 3px;
+  /*width: 305px;*/
+  width: 95%;
+}
+
+#submitId{
+  width:300px;
+  margin-top:10px;
+  padding: 10px;
+  background-color:#3B291A;
+  color: #F7D8BA;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  border-style: solid solid solid solid;
+  border-color: white grey grey white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px;
+}
+
+#mediaLinks{
+  margin-top:10px;
+}
+
+#mediaLinks a{
+  text-decoration: none;
+  padding-top:5px;
+}
+
+#fbLogo {
+  width:20px;
+  height:22px;
+}
+
+#liLogo{
+  width:22px;
+  height:22px;
+}
+
+#gpLogo {
+  width:20px;
+  height:20px;
+}
+
+#pageFooter {
+  visibility: hidden;
+  display: none;
+}
+/* END CONTACT PAGE CODE */
+@media only screen and (min-width: 480px) {
+
+  html{
+    width:100%;
+  }
+  .nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+  .nav {
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+  }
+  /* About code */
+  img {
+    max-width: 100%;
+  }
+  .description {
+    padding-top: 2em;
+  }
+  /*About code end */
+
+  /* CONTACT PAGE CODE */
+  #contactP{
+    line-height: 1em;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+
+  #inputArea{
+    text-align: center;
+    height: 300px;
+  }
+
+  #inputArea ul {
+    height:81%;
+  }
+
+  #inputArea li{
+    padding: 10px;
+    height:22%;
+  }
+
+  #inputArea li input{
+    width: 350px;
+  }
+
+  textarea{
+    width:346px;
+  }
+
+  #pageFooter {
+    border-top: 2px solid;
+    visibility: visible;
+    background: #F7D8BA;
+    width: 100%;
+    padding:10px;
+    display: inline-block;
+    text-align:left;
+
+  }
+
+  #pageFooter table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pageFooter th{
+    /*padding: 0 20px;*/
+    padding: 0 4vw;
+    text-decoration: none;
+  }
+
+  #pageFooter a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    color: #403830;
+  }
+
+
+  #colName {
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  /* END CONTACT PAGE CODE*/
+}
+
+@media only screen and (min-width: 768px){
+  html{
+    max-width: 1440px;
+  }
+  /*ABOUT PAGE CODE */
+  img {
+    max-width: none;
+  }
+  .mainflex {
+    display: flex;
+    justify-content: center;
+  }
+  .members {
+    display: flex;
+  }
+  .desc, figcaption {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  /* ABOUT PAGE ENDS */
+
+  /* CONTACT PAGE CODE */
+  form{
+    text-align:left;
+    padding-left: 15px;
+  }
+
+  #contactP{
+    line-height: 1em;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+
+  #contactHeader{
+    text-align: left;
+    padding-left:15px;
+  }
+
+  #inputArea{
+    text-align:left;
+    padding: 20px;
+    min-width: 452px;
+    width:60%;
+    max-width: 750px;
+    height:350px;
+    border: 2px ;
+    border-style:groove;
+  }
+
+  #inputArea ul{
+    padding-bottom: 0px;
+  }
+
+  #inputArea li{
+    padding: 10px;
+  }
+
+  #inputArea li input{
+    width: 100%;
+    max-width: 20em;
+
+  }
+
+  textArea{
+    min-width: 365px;
+    width:75%;
+  }
+
+  #submitDiv {
+    padding-left: 0px;
+  }
+
+  #submitId {
+    width: 200px;
+  }
+
+
+  #pageFooter th{
+    padding: 0 8vw;
+  }
+
+  /* END CONTACT PAGE CODE */
+}
